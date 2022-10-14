@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="card bg-dark text-white">
+    <div class="card-header">CREAR</div>
+    <div class="card-body">
+        <form ngNavigateValidate (ngSubmit)="create()" >
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">email</label>
+                <div class="col-sm-6" >
+                    <input type="email" class="form-control" [(ngModel)]="administrador.email" name="nombre_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="administrador.nombre" name="nombre_cliente" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Usuario</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="administrador.nombreUsuario" name="apellido_cliente" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">password</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" [(ngModel)]="administrador.password" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group row"> 
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" style="margin-right: 10px;">Crear</button>
+                    <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/admin']">ATRAS</button>
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </div>
+</div>
+

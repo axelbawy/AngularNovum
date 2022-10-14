@@ -1,0 +1,30 @@
+
+<app-header></app-header>
+<h1 style="text-align: center;">LISTADO DE FICHAS</h1>
+<ul class="list-group" *ngFor = "let fichasocio of fichasocio">
+    <h3 style="text-align: center;">{{fichasocio.nombre_cliente}}  {{fichasocio.apellido_cliente}}</h3>
+    <div class="form-group row"> 
+        <div class="col-sm-6">
+            <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/ficha']">ATRAS</button>
+        </div>
+    </div>
+    <br>
+    <li class="list-group-item"><h5>id_ficha: </h5>  {{fichasocio.id_ficha}}</li>
+    <li class="list-group-item"><h5>cedula:</h5> {{fichasocio.cedula}}</li>
+    <li class="list-group-item"><h5>nombre_cliente:</h5> {{fichasocio.nombre_cliente}}</li>
+    <li class="list-group-item"><h5>apellido_cliente:</h5> {{fichasocio.apellido_cliente}}</li>
+    <li class="list-group-item"><h5>email:</h5> {{fichasocio.email}}</li>
+    <li class="list-group-item"><h5>telefono:</h5> {{fichasocio.telefono}}</li>
+    <li class="list-group-item"><h5>ciudad:</h5> {{fichasocio.ciudad}}</li>
+    <li class="list-group-item"><h5>pais:</h5> {{fichasocio.pais}}</li>
+    <li class="list-group-item"><h5>lugarNacimiento:</h5> {{fichasocio.lugarNacimiento}}</li>
+    <li class="list-group-item"><h5>grado_istruccion:</h5> {{fichasocio.grado_istruccion}}</li>
+    <li class="list-group-item"><h5>nombre_apellido_padre:</h5> {{fichasocio.nombre_apellido_padre}}</li>
+    <li class="list-group-item"><h5>nombre_apellido_madre:</h5> {{fichasocio.nombre_apellido_madre}}</li>
+    <li class="list-group-item"><h5>num_padre:</h5> {{fichasocio.num_padre}}</li>
+    <li class="list-group-item"><h5>num_madre:</h5> {{fichasocio.num_madre}}</li>
+    <li class="list-group-item"><h5>ocupacion:</h5> {{fichasocio.ocupacion}}</li>
+    <li class="list-group-item"><h5>domicilio:</h5> {{fichasocio.domicilio}}</li>
+    <li class="list-group-item"><h5>salario:</h5> {{fichasocio.salario}}</li>
+    <li class="list-group-item"><h5>num_personas_familia:</h5> {{fichasocio.num_personas_familia}}</li>
+  </ul>

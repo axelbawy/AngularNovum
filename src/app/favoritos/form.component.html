@@ -1,0 +1,30 @@
+
+<app-header></app-header>
+<h1 style="text-align: center;">LISTADO DE FAVORITOS</h1>
+<table class="table table-bordered table-striped"  >
+    <thead >
+        <tr >
+            <th>id_favoritos</th>
+            <th>id_cliente</th>
+            <th>id_producto</th>
+  
+           
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor = "let favorito of favoritos"  >
+            <td class="list-group-item-action" >{{favorito.id_favoritos}}</td>
+            <td class="list-group-item-action" >{{favorito.id_cliente}}</td>
+            <td class="list-group-item-action" >{{favorito.id_producto}}</td>
+
+         
+            
+           
+        </tr>
+    </tbody>
+</table>
+<div class="form-group row"> 
+    <div class="col-sm-6">
+        <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/favoritos']">ATRAS</button>
+    </div>
+</div>

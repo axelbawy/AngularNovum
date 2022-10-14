@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="card bg-dark text-white">
+    <div class="card-header">Eliminar</div>
+    <div class="card-body">
+        <form ngNavigateValidate (ngSubmit)="eliminar()" >
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">ID</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="categorias.id_categoria" name="id_categoria" required>
+                </div>
+            </div>
+            <div class="form-group row"> 
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" style="margin-right: 10px;">Eliminar</button>
+                    <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/categoria']">ATRAS</button> 
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </div>
+</div>

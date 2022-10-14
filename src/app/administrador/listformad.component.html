@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<h1 style="text-align: center;">LISTADO DE ADMINISTRADORES</h1>
+<table class="table table-bordered table-striped"  >
+    <thead >
+        <tr >
+            <th>email</th>
+            <th>nombre</th>
+            <th>nombreusuario</th>
+            <th>password</th>
+  
+           
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor = "let administrador of administradores"  >
+            <td class="list-group-item-action" >{{administrador.email}}</td>
+            <td class="list-group-item-action" >{{administrador.nombre}}</td>
+            <td class="list-group-item-action" >{{administrador.nombreUsuario}}</td>
+            <td class="list-group-item-action" >{{administrador.password}}</td>
+
+         
+            
+           
+        </tr>
+    </tbody>
+</table>
+<div class="form-group row"> 
+    <div class="col-sm-6">
+        <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/admin']">ATRAS</button>
+    </div>
+</div>

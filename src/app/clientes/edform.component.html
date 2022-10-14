@@ -1,0 +1,75 @@
+<app-header></app-header>
+<div class="card bg-dark text-white">
+    <div class="card-header">EDITAR</div>
+    <div class="card-body">
+        <form ngNavigateValidate (ngSubmit)="Editar()" >
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">ID</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="cliente.id_cliente" name="nombre_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">Cedula</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="cliente.cedula" name="nombre_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="cliente.nombre_cliente" name="nombre_cliente" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Apellido</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.apellido_cliente" name="apellido_cliente" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Email</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" [(ngModel)]="cliente.email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Telefono</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Direccion</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.direccion" name="direccion" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Usuario</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.usuario" name="usuario" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Contraseña</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.contrasena" name="contrasena" required>
+                </div>
+            </div>
+
+
+            <div class="form-group row"> 
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" style="margin-right: 10px;">Crear</button>
+                    <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/clientes']">ATRAS</button>
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </div>
+</div>

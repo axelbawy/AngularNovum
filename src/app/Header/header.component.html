@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: black;">
+	<div class="container-fluid">
+	  <a class="navbar-brand" >
+          <img src="https://novum.ec/wp-content/uploads/2020/08/18920547_1013228268814633_5936910084828943212_n-e1593836347928.jpg" alt="" width="235" height="100">
+      </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li style="border-color: white; border-style: solid;margin-left: 1px;">
+				<a class="nav-link active" aria-current="page" routerLink="/admin">ADMIN</a>
+			  </li>
+			  <li style="border-color: white; border-style: solid;margin-left: 20px;">
+				<a class="nav-link active" aria-current="page" routerLink="/reporteria">REPORTERIA</a>
+			  </li>
+			  <li style="border-color: white; border-style: solid;margin-left: 20px;">
+				<a class="nav-link active" aria-current="page" routerLink="/ficha">FICHA</a>
+			  </li>
+            <li style="border-color: white; border-style: solid; margin-left: 20px;">
+                <a class="nav-link active" aria-current="page" routerLink="/clientes">CLIENTES</a>
+              </li> 
+              <li style="border-color: white; border-style: solid;margin-left: 20px;">
+                <a class="nav-link active" aria-current="page" routerLink="/productos">PRODUCTOS</a>
+              </li>
+		  <li  style="border-color: white; border-style: solid;margin-left: 20px;">
+			<a class="nav-link active" aria-current="page" routerLink="/categoria">CATEGORIA</a>
+		  </li>
+		  <li style="border-color: white; border-style: solid;margin-left: 20px;">
+			<a class="nav-link active" aria-current="page" routerLink="/favoritos">FAVORITOS</a>
+		  </li>
+          <li style="border-color: white; border-style: solid;margin-left: 20px;">
+			<a class="nav-link active" aria-current="page" routerLink="/subcategoria">SUB-CATEGORIA</a>
+		  </li>
+		</ul>
+		
+	  </div>
+     
+		<a class="nav-link " style="margin-left: 10px;color: white;" type="button" ><i class="fas fa-door-open" *ngIf="isLogged" (click)="onLogOut()"><h3>Salir</h3></i></a>
+	  
+	</div>
+  </nav>

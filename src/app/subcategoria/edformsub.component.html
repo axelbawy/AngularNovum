@@ -1,0 +1,43 @@
+
+<app-header></app-header>
+<div class="card bg-dark text-white">
+    <div class="card-header">CREAR</div>
+    <div class="card-body">
+        <form ngNavigateValidate (ngSubmit)="editar()" >
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">id_Subcategoria</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="subcategoria.id_subcategoria" name="id_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">id_categoria</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="subcategoria.id_categoria" name="id_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">Nombre subcategoria</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="subcategoria.nombreSubcategoria" name="nombreSubcategoria" required>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row"> 
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" style="margin-right: 10px;">EDITAR</button>
+                    <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/subcategoria']">ATRAS</button>
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </div>
+</div>
+
+
+

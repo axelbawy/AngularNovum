@@ -1,0 +1,32 @@
+<app-header></app-header>
+<h1 style="text-align: center;">LISTADO DE SUBCATEGORIAS</h1>
+<table class="table table-bordered table-striped"  >
+    <thead >
+        <tr >
+            <th>id_subcategoria</th>
+            <th>id_categoria</th>
+            <th>Nombre subcategoria</th>
+
+  
+           
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor = "let subcategori of subcategorias"  >
+            <td class="list-group-item-action" >{{subcategori.id_subcategoria}}</td>
+            <td class="list-group-item-action" >{{subcategori.id_categoria}}</td>
+            <td class="list-group-item-action" >{{subcategori.nombreSubcategoria}}</td>
+  
+
+         
+            
+           
+        </tr>
+    </tbody>
+</table>
+<div class="form-group row"> 
+    <div class="col-sm-6">
+        <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/subcategoria']">ATRAS</button>
+    </div>
+</div>
+

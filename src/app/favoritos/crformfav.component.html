@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="card bg-dark text-white">
+    <div class="card-header">CREAR</div>
+    <div class="card-body">
+        <form ngNavigateValidate (ngSubmit)="create()" >
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">id_cliente</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="favorito.id_cliente" name="id_cliente" required>
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <label for="" class="col-form-label col-sm-2">id_producto</label>
+                <div class="col-sm-6" >
+                    <input type="text" class="form-control" [(ngModel)]="favorito.id_producto" name="id_producto" required>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row"> 
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" style="margin-right: 10px;">Crear</button>
+                    <button class="btn btn-rounded btn-primary" style="margin-right:10px" type="button" [routerLink]="['/favoritos']">ATRAS</button>
+                </div>
+            </div>
+
+            
+            
+        </form>
+    </div>
+</div>
+
